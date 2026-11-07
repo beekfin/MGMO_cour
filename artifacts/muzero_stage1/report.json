@@ -1,0 +1,116 @@
+{
+  "python": "3.14.9",
+  "gymnasium": "1.4.0",
+  "numpy": "2.5.4",
+  "torch": "2.15.0+cu132",
+  "device": "cpu",
+  "threads": 1,
+  "trained": false,
+  "mcts_implemented": false,
+  "environments": [
+    {
+      "environment": "Pendulum-v1",
+      "observation_shape": [
+        3
+      ],
+      "action_shape": [
+        1
+      ],
+      "grid": [
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0
+      ],
+      "episode_limit": 200,
+      "episodes": [
+        {
+          "seed": 42,
+          "return": -1193.7187711319898,
+          "steps": 200,
+          "terminated": false,
+          "truncated": true
+        },
+        {
+          "seed": 43,
+          "return": -1076.8557722855305,
+          "steps": 200,
+          "terminated": false,
+          "truncated": true
+        },
+        {
+          "seed": 44,
+          "return": -1413.0250968659384,
+          "steps": 200,
+          "terminated": false,
+          "truncated": true
+        }
+      ],
+      "environment_seconds": 0.021841747000507894,
+      "model_pairs": 1000,
+      "model_pair_mean_seconds": 9.997162600120646e-05,
+      "hidden_shape": [
+        1,
+        32
+      ],
+      "policy_shape": [
+        1,
+        5
+      ],
+      "purpose": "random_grid_and_untrained_model_check"
+    },
+    {
+      "environment": "MountainCarContinuous-v0",
+      "observation_shape": [
+        2
+      ],
+      "action_shape": [
+        1
+      ],
+      "grid": [
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "episode_limit": 999,
+      "episodes": [
+        {
+          "seed": 42,
+          "return": -50.17500000000008,
+          "steps": 999,
+          "terminated": false,
+          "truncated": true
+        },
+        {
+          "seed": 43,
+          "return": -50.62500000000003,
+          "steps": 999,
+          "terminated": false,
+          "truncated": true
+        },
+        {
+          "seed": 44,
+          "return": -50.65000000000007,
+          "steps": 999,
+          "terminated": false,
+          "truncated": true
+        }
+      ],
+      "environment_seconds": 0.034939597999255056,
+      "model_pairs": 1000,
+      "model_pair_mean_seconds": 9.731820500019239e-05,
+      "hidden_shape": [
+        1,
+        32
+      ],
+      "policy_shape": [
+        1,
+        5
+      ],
+      "purpose": "random_grid_and_untrained_model_check"
+    }
+  ]
+}
