@@ -35,11 +35,13 @@ Sampled MuZero ещё не реализованы. Это исходный ко�
 
 ## Запуск
 
-Откройте терминал в распакованной папке `MuZero_начальный_этап`.
+Команды выполняются из корневой папки репозитория `MGMO_cour`.
 Проверенная среда использует Python 3.14.9; точные версии библиотек
 указаны в файле зависимостей и сохранённом отчёте.
 
 ```bash
+git clone https://github.com/beekfin/MGMO_cour.git
+cd MGMO_cour
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-stage1.txt
 .venv/bin/python -m unittest discover -s tests -v
